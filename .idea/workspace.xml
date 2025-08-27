@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: container styling" />
+    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: container styling">
+      <change afterPath="$PROJECT_DIR$/src/handlers/auth/handleAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/auth/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/api/auth/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/auth/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/auth/index.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +48,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/barsam/Code/lab-control-back&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -58,6 +63,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/barsam/Code/lab-control/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -112,6 +122,10 @@
       <workItem from="1756293132368" duration="18000" />
       <workItem from="1756293165288" duration="176000" />
       <workItem from="1756293359165" duration="1315000" />
+      <workItem from="1756295777740" duration="1578000" />
+      <workItem from="1756298575528" duration="2547000" />
+      <workItem from="1756548719797" duration="520000" />
+      <workItem from="1756549258374" duration="3992000" />
     </task>
     <task id="LOCAL-00001" summary="feat: body style, title">
       <option name="closed" value="true" />
