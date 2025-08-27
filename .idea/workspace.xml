@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: container styling">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-container/Auth/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-container/Auth/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page-container/Auth/useViewController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-container/Auth/useViewController.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +110,8 @@
       <workItem from="1756207236546" duration="1571000" />
       <workItem from="1756214391767" duration="645000" />
       <workItem from="1756215049197" duration="919000" />
-      <workItem from="1756215994659" duration="336000" />
+      <workItem from="1756215994659" duration="611000" />
+      <workItem from="1756280250611" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="feat: body style, title">
       <option name="closed" value="true" />
