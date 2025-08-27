@@ -1,10 +1,10 @@
 import { useMutation } from "@tanstack/react-query";
 import { authLogin } from "@/src/services/auth";
-import { ChangeEventHandler, useRef } from "react";
+import { useRef } from "react";
 import { ILoginRequest } from "@/src/services/auth/auth.props";
 
 const useViewController = () => {
-    const { mutateFn } = useMutation({ mutationFn: authLogin });
+    const { mutateAsync } = useMutation({ mutationFn: authLogin });
     const fields = useRef<Partial<ILoginRequest>>({
         username: undefined,
         password: undefined,
@@ -31,9 +31,18 @@ const useViewController = () => {
         e.preventDefault();
         e.stopPropagation();
 
-        console.log(e.target);
+        if (!fields.current.username || !fields.current.password) return;
 
-        console.log(fields.current)
+        mutateAsync(fields.current as ILoginRequest)
+            .then(() => {
+                alert("Login successful");
+                return;
+            })
+            .catch((err) => {
+                alert(err.message);
+                return;
+            });
+        return;
     };
 
     return { onSubmit, onChange };
