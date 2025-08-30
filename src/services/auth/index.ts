@@ -4,6 +4,10 @@ import { IGeneralResponse } from "@/src/services/shared.props";
 
 const endpoint = "/auth";
 
+export const authCheck = () => {
+    return api.get<IGeneralResponse>(endpoint);
+};
+
 export const authLogin = (data: ILoginRequest) => {
     return api.post<IGeneralResponse>(endpoint, data);
 };
