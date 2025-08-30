@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: drizzle init&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
-      <change afterPath="$PROJECT_DIR$/src/middleware/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/tokenVerify.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middleware/tryCatch.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/auth/handleAuth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/auth/handleAuth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/tokenVerify.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/tokenVerify.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +131,10 @@
       <workItem from="1756556032584" duration="1358000" />
       <workItem from="1756557408056" duration="1000" />
       <workItem from="1756560082428" duration="87000" />
+      <workItem from="1756560206385" duration="414000" />
+      <workItem from="1756560644633" duration="42000" />
+      <workItem from="1756560696480" duration="21000" />
+      <workItem from="1756560723651" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="feat: body style, title">
       <option name="closed" value="true" />

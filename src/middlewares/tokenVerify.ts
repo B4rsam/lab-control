@@ -1,7 +1,19 @@
 import { cookies } from "next/headers";
-import jwt from "jsonwebtoken";
+import jwt, { JwtPayload } from "jsonwebtoken";
 
-const tokenVerify = async () => {
+interface Success {
+    result: JwtPayload | any;
+    error: null;
+}
+
+interface Failure<E> {
+    result: null;
+    error: E;
+}
+
+type Result<E> = Success | Failure<E>;
+
+const tokenVerify = async <E = Error>(): Promise<Result<E>> => {
     const cookieStore = await cookies();
     const token = cookieStore.get("token");
 
@@ -14,7 +26,7 @@ const tokenVerify = async () => {
     } catch (error) {
         return {
             result: null,
-            error: error,
+            error: error as E,
         };
     }
 };
