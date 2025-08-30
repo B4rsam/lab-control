@@ -1,6 +1,7 @@
 import { ILoginRequest } from "@/src/services/auth/auth.props";
 import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
+import { tokenConfig } from "@/src/middlewares";
 
 const handleLogin = async (req: Request) => {
     const data: ILoginRequest = await req.json();
@@ -13,7 +14,8 @@ const handleLogin = async (req: Request) => {
             {
                 username: data.username,
             },
-            process.env.JWT_KEY as string
+            process.env.JWT_KEY as string,
+            tokenConfig
         );
         return new NextResponse(JSON.stringify({ message: "Logged in" }), {
             status: 200,
