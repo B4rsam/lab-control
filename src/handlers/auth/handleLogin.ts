@@ -13,7 +13,7 @@ const handleLogin = async (req: Request) => {
             {
                 username: data.username,
             },
-            "test"
+            process.env.JWT_KEY as string
         );
         return new NextResponse(JSON.stringify({ message: "Logged in" }), {
             status: 200,
