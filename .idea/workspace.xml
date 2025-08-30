@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: container styling">
-      <change beforePath="$PROJECT_DIR$/.env-example" beforeDir="false" afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
+    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: drizzle init&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
+      <change afterPath="$PROJECT_DIR$/src/middleware/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/tokenVerify.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/tryCatch.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/barsam/Code/lab-control-back&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -129,6 +131,7 @@
       <workItem from="1756549258374" duration="3992000" />
       <workItem from="1756556032584" duration="1358000" />
       <workItem from="1756557408056" duration="1000" />
+      <workItem from="1756560082428" duration="87000" />
     </task>
     <task id="LOCAL-00001" summary="feat: body style, title">
       <option name="closed" value="true" />
@@ -171,6 +174,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="backend" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="main" />
                 </option>
               </RecentGroup>
@@ -189,7 +197,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="backend" />
                       </list>
                     </value>
                   </entry>
