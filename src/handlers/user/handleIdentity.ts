@@ -8,7 +8,11 @@ const handleIdentity = async () => {
 
     const { username } = result;
 
-    return NextResponse.json({ data: username });
+    return NextResponse.json({
+        data: {
+            username,
+        },
+    });
 };
 
 export default handleIdentity;
