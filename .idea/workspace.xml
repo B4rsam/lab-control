@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: container styling">
-      <change beforePath="$PROJECT_DIR$/.env-example" beforeDir="false" afterPath="$PROJECT_DIR$/.env-example" afterDir="false" />
+    <list default="true" id="806e7b12-6fd4-490d-8c94-c588e57163ca" name="Changes" comment="feat: drizzle init&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/drizzle/schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/drizzle/schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handlers/auth/handleLogin.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/handlers/auth/handleLogin.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +49,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;backend&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/home/barsam/Code/lab-control-back&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -129,6 +132,27 @@
       <workItem from="1756549258374" duration="3992000" />
       <workItem from="1756556032584" duration="1358000" />
       <workItem from="1756557408056" duration="1000" />
+      <workItem from="1756560082428" duration="87000" />
+      <workItem from="1756560206385" duration="414000" />
+      <workItem from="1756560644633" duration="42000" />
+      <workItem from="1756560696480" duration="21000" />
+      <workItem from="1756560723651" duration="32000" />
+      <workItem from="1756560793532" duration="1113000" />
+      <workItem from="1756561928851" duration="20000" />
+      <workItem from="1756561964359" duration="31000" />
+      <workItem from="1756562001616" duration="9000" />
+      <workItem from="1756562019272" duration="1246000" />
+      <workItem from="1756563362839" duration="481000" />
+      <workItem from="1756625526062" duration="70000" />
+      <workItem from="1756798076200" duration="1826000" />
+      <workItem from="1756800433424" duration="1695000" />
+      <workItem from="1756802151563" duration="287000" />
+      <workItem from="1756802451334" duration="335000" />
+      <workItem from="1756802808895" duration="1638000" />
+      <workItem from="1756808060146" duration="1086000" />
+      <workItem from="1756809202664" duration="1961000" />
+      <workItem from="1756811237003" duration="1486000" />
+      <workItem from="1756812740595" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary="feat: body style, title">
       <option name="closed" value="true" />
@@ -171,6 +195,11 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="backend" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="main" />
                 </option>
               </RecentGroup>
@@ -189,7 +218,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="backend" />
                       </list>
                     </value>
                   </entry>
