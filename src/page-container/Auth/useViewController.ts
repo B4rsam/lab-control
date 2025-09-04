@@ -2,8 +2,10 @@ import { useMutation } from "@tanstack/react-query";
 import { authLogin } from "@/src/services/auth";
 import { useRef } from "react";
 import { ILoginRequest } from "@/src/services/auth/auth.props";
+import { useRouter } from "next/navigation";
 
 const useViewController = () => {
+    const router = useRouter();
     const { mutateAsync } = useMutation({ mutationFn: authLogin });
     const fields = useRef<Partial<ILoginRequest>>({
         username: undefined,
@@ -35,7 +37,7 @@ const useViewController = () => {
 
         mutateAsync(fields.current as ILoginRequest)
             .then(() => {
-                alert("Login successful");
+                router.push("/");
                 return;
             })
             .catch((err) => {
