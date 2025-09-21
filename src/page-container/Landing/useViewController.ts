@@ -1,18 +1,24 @@
 import { getUsername } from "@/src/services/user";
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
+import { useWebSocket } from "@/src/helpers";
 
 const useViewController = () => {
-    const [stats, setStats] = useState<any>({});
-    const ws = new WebSocket("ws://localhost:3000");
 
-    useEffect(() => {
-        ws.onmessage = (event) => setStats(JSON.parse(event.data));
+    const { messages, sendMessage } = useWebSocket("ws://localhost:3000");
 
-        return () => ws.close();
-    }, [ws.onmessage]);
+    // useEffect(() => {
+    //     const ws = new WebSocket("ws://localhost:3000");
+    //
+    //     ws.onmessage = (event) => {
+    //         const data = JSON.parse(event.data);
+    //         setStats(data);
+    //     };
+    //
+    //     return () => ws.close();
+    // }, []);
 
-    console.log(stats)
+    console.log(messages)
 
     const { data } = useQuery({
         queryKey: ["get-username"],
@@ -24,7 +30,7 @@ const useViewController = () => {
 
     return {
         username: data,
-        stats: stats.data,
+        stats: {},
     };
 };
 

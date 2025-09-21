@@ -17,45 +17,47 @@ app.prepare()
 
         const wss = new WebSocketServer({ server });
 
-        wss.on("connection", async (socket) => {
+        wss.on("connection", (socket) => {
             console.log("Websocket connected");
 
-            const { speed, speedMax, speedMin, governor, brand } = await si.cpu();
-            const { total, used, swaptotal, swapused } = await si.mem();
+            setInterval(async () => {
+                const { speed, speedMax, speedMin, governor, brand } = await si.cpu();
+                const { total, used, swaptotal, swapused } = await si.mem();
 
-            const { hasBattery, isCharging, percent, acConnected, timeRemaining } =
-                await si.battery();
+                const { hasBattery, isCharging, percent, acConnected, timeRemaining } =
+                    await si.battery();
 
-            const data = {
-                timestamp: new Date().toISOString(),
-                cpu: {
-                    speed,
-                    speedMax,
-                    speedMin,
-                    governor,
-                    brand,
-                },
-                memory: {
-                    total,
-                    used,
-                    swapused,
-                    swaptotal,
-                },
-                battery: {
-                    hasBattery,
-                    isCharging,
-                    percent,
-                    acConnected,
-                    timeRemaining,
-                },
-            };
+                const data = {
+                    timestamp: new Date().toISOString(),
+                    cpu: {
+                        speed,
+                        speedMax,
+                        speedMin,
+                        governor,
+                        brand,
+                    },
+                    memory: {
+                        total,
+                        used,
+                        swapused,
+                        swaptotal,
+                    },
+                    battery: {
+                        hasBattery,
+                        isCharging,
+                        percent,
+                        acConnected,
+                        timeRemaining,
+                    },
+                };
 
-            socket.send(
-                JSON.stringify({
-                    message: "Data sent - " + Date.now(),
-                    data,
-                })
-            );
+                socket.send(
+                    JSON.stringify({
+                        message: "Data sent - " + Date.now(),
+                        data,
+                    })
+                );
+            }, 2000);
         });
 
         wss.on("close", () => {
