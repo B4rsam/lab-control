@@ -4,13 +4,15 @@ import { useEffect, useState } from "react";
 
 const useViewController = () => {
     const [stats, setStats] = useState<any>({});
+    const ws = new WebSocket("ws://localhost:3000");
 
     useEffect(() => {
-        const ws = new WebSocket("ws://localhost:3000");
-        ws.onmessage = (event) => console.log(JSON.parse(event.data));
+        ws.onmessage = (event) => setStats(JSON.parse(event.data));
 
         return () => ws.close();
-    }, []);
+    }, [ws.onmessage]);
+
+    console.log(stats)
 
     const { data } = useQuery({
         queryKey: ["get-username"],
@@ -22,6 +24,7 @@ const useViewController = () => {
 
     return {
         username: data,
+        stats: stats.data,
     };
 };
 
